@@ -15,3 +15,12 @@
 - La tabla "empleados" esta compuesta por 3 atributos (id, nombre, direccion):
    "id" esta definida como INT, PK, NN, AI.
    "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
+
+'''
+public interface Resources {
+    
+    //System.getenv utiliza las variables de entorno creadas con netbeans
+    public static final String URL = System.getenv("URL");
+    public static final String USER = System.getenv("USER");
+    public static final String PASS = System.getenv("PASS");
+}
