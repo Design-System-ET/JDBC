@@ -13,6 +13,5 @@
 ## Detalles del proyecto
 - Es un ejemplo simple de un CRUD utilizando una conexion JDBC a una base de datos MySQL, teniendo en cuenta que el schema de la BD "curso_java" debe existir y la tabla "empleados" tambien.
 - La tabla "empleados" esta compuesta por 3 atributos (id, nombre, direccion):
-  --  "id" esta definida como INT, PK, NN, AI.
-  --  "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
-  --  
+   "id" esta definida como INT, PK, NN, AI.
+   "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
