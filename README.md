@@ -91,6 +91,21 @@ public interface Resources {
 }
 ```
 
+## Ejecucion
+- Si esta ejecutando desde Netbeans, modifica el 'nbactions.xml' para indicar la BD y las credenciales de acceso.
+- El nombre del schema BD es "curso_java", si l modificas se debe modificar aqui tambien.
+
+```xml
+<Env.URL>jdbc:mysql://localhost:3306/curso_java</Env.URL>
+<Env.USER>USER</Env.USER>
+<Env.PASS>PASSWORD</Env.PASS>
+```  
+
+## Funcionalidad Extra
+- Agregar dependencias para generar el JAR (recordando el tema de las variables de entorno tal cual esta presentado el proyecto).
+- De usar un config.properties (ubicandolo en `src/main/resources`, esto ara que se incluya el mismo en el JAR), modificar la clase Resource para que lea el archivo.
+- Si no quieres incluir el config.properties dentro del JAR, puedes posicionarlo en la raiz del proyecto y este se debe distribuir junto con el JAR y modificarlo a conveniencia.
+
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
