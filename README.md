@@ -31,6 +31,7 @@ public interface Resources {
 
 ⚠️ Importante: Estas variables solo están disponibles al ejecutar desde NetBeans (no desde consola o JAR directamente, salvo que definas también las variables en el sistema operativo).
 
+## Archivo config.properties externo
 - Puedes utilizar un config.properties para definir los datos de acceso y poder ejecutar desde consola, jar o contenedor, ej:
 
 ```
