@@ -16,7 +16,7 @@
    "id" esta definida como INT, PK, NN, AI.
    "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
 
-'''
+'''java
 public interface Resources {
     
     //System.getenv utiliza las variables de entorno creadas con netbeans
