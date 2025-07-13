@@ -17,10 +17,12 @@
    "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
 
 '''java
-public interface Resources {
+
     
+public interface Resources {    
     //System.getenv utiliza las variables de entorno creadas con netbeans
     public static final String URL = System.getenv("URL");
     public static final String USER = System.getenv("USER");
     public static final String PASS = System.getenv("PASS");
 }
+
