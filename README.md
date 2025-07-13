@@ -2,6 +2,7 @@
 
 ## JDBC (Java Database Connectivity) es la API nativa de Java para conectarse y ejecutar operaciones en bases de datos relacionales (como MySQL, PostgreSQL, Oracle, etc.) sin usar frameworks adicionales como Hibernate o JPA.
 
+
 ## Caracteristicas:
 - Bajo nivel: tu controlas cada detalle, conexion, SQL, ejecucion y cierre de recursos.
 - Codigo explicito: escribes directamente las sentencias SQL.
@@ -15,6 +16,7 @@
 - La tabla "empleados" esta compuesta por 3 atributos (id, nombre, direccion):
    "id" esta definida como INT, PK, NN, AI.
    "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
+
 
 ## Interfaze Resources
 - Utilizamos esta para definir los datos de la conexion a la BD en MySQL. "URL", "USER" y "PASS" los definimo en las variables de entorno de Netbeans para no exponerlos directamente en el codigo, y facilitar el despliegue en servidores o contenedores.
@@ -31,6 +33,7 @@ public interface Resources {
 
 ⚠️ Importante: Estas variables solo están disponibles al ejecutar desde NetBeans (no desde consola o JAR directamente, salvo que definas también las variables en el sistema operativo).
 
+
 ## Archivo config.properties externo
 - Puedes utilizar un config.properties para definir los datos de acceso y poder ejecutar desde consola, jar o contenedor, ej:
 
@@ -40,7 +43,7 @@ USER=mi_user
 PASS=mi_pass
 ```
 
-y luego modificar el resources a:
+y luego modificar el Resources a:
 
 ```java
 import java.io.IOException;
