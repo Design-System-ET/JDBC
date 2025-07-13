@@ -35,7 +35,8 @@ public interface Resources {
 
 
 ## Archivo config.properties externo
-- Puedes utilizar un config.properties para definir los datos de acceso y poder ejecutar desde consola, jar o contenedor, ej:
+- Puedes utilizar un config.properties para definir los datos de acceso y poder ejecutar desde consola, jar o contenedor'
+- Crea un archivo `config.properties` en el directorio `src/main/resources` con el siguiente contenido:
 
 ```
 URL=jdbc:mysql://localhost:3306/mi_bd
@@ -72,4 +73,7 @@ public interface Resources {
 }
 ```
 
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
