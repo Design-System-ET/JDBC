@@ -1,21 +1,39 @@
-# Programación JDBC tradicional (o JDBC nativo/puro)
+# JDBC - Conexión a Base de Datos MySQL
 
-## JDBC (Java Database Connectivity) es la API nativa de Java para conectarse y ejecutar operaciones en bases de datos relacionales (como MySQL, PostgreSQL, Oracle, etc.) sin usar frameworks adicionales como Hibernate o JPA.
+Este proyecto es un ejemplo simple de un CRUD utilizando JDBC tradicional (también conocido como JDBC nativo o puro), conectándose a una base de datos MySQL.
 
+---
 
-## Caracteristicas:
-- Bajo nivel: tu controlas cada detalle, conexion, SQL, ejecucion y cierre de recursos.
-- Codigo explicito: escribes directamente las sentencias SQL.
-- Sin capa de abstraccion: no hay mapeo automatico entre clases java y tablas.
-- Mas control y responsabilidad: se deben manejar errore, cierre de conexion y validaciones manualmente.
-- Requiere mas codigo: pero es mas transparente y facil de depurar.
+## ¿Qué es JDBC tradicional?
 
+**JDBC (Java Database Connectivity)** es la API nativa de Java para conectarse y ejecutar operaciones en bases de datos relacionales (como MySQL, PostgreSQL, Oracle, etc.) sin frameworks adicionales como Hibernate o JPA.
 
-## Detalles del proyecto
-- Es un ejemplo simple de un CRUD utilizando una conexion JDBC a una base de datos MySQL, teniendo en cuenta que el schema de la BD "curso_java" debe existir y la tabla "empleados" tambien.
-- La tabla "empleados" esta compuesta por 3 atributos (id, nombre, direccion):
-   "id" esta definida como INT, PK, NN, AI.
-   "nombre" y "direccion" estan definidos como VARCHAR(255), NN.
+### Características:
+
+- 🔹 **Bajo nivel**: tú controlas cada detalle: conexión, SQL, ejecución y cierre de recursos.
+- 🔹 **Código explícito**: escribes directamente las sentencias SQL.
+- 🔹 **Sin capa de abstracción**: no hay mapeo automático entre clases Java y tablas.
+- 🔹 **Más control y responsabilidad**: debes manejar errores, validaciones y cierre de conexión manualmente.
+- 🔹 **Requiere más código**: pero es más transparente y fácil de depurar.
+
+---
+
+## Detalles del Proyecto
+
+Este ejemplo realiza un CRUD conectado a una base de datos MySQL.
+
+- Esquema requerido: `curso_java`
+- Tabla requerida: `empleados`
+
+### Estructura de la tabla `empleados`:
+
+| Campo     | Tipo         | Restricciones        |
+|-----------|--------------|----------------------|
+| id        | INT          | PK, NOT NULL, AUTO_INCREMENT |
+| nombre    | VARCHAR(255) | NOT NULL             |
+| direccion | VARCHAR(255) | NOT NULL             |
+
+---
 
 
 ## Interfaze Resources
